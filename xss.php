@@ -21,9 +21,6 @@ function test_input($data) {
   $sanitizedComment2 = filter_var($sanitizedComment, FILTER_SANITIZE_ADD_SLASHES);
   $sanitizedComment3 = str_replace("src", "", $sanitizedComment2);
   $sanitizedComment4 = str_replace("href", "", $sanitizedComment3);
-  //   $data = trim($data);
-  // $sanitizedComment = stripslashes($data);
-  // $data = htmlspecialchars_decode($data);
   return $sanitizedComment4;
 }
 ?>
